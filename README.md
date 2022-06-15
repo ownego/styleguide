@@ -6,6 +6,9 @@ _* This rule is not the best practice but the one that we (developers at ownego)
 ### GIT
 [View git guidelines here](git.md)
 
+***
+### Comments
+[View code comment guidelines here](comment.md)
 
 ***
 ### Javascript
