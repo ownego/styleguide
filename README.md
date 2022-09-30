@@ -15,6 +15,10 @@ _* This rule is not the best practice but the one that we (developers at ownego)
 [View Javascript guidelines here](js.md)
 
 ***
+### Vuejs 3
+[View Vuejs guidelines here](vue.md)
+
+***
 ### PHP
 [View PHP guidelines here](php.md)
 
