@@ -3,7 +3,7 @@ _* This rule is not the best practice but the one that we (developers at ownego)
 ***
 ### RESOURCE
 ***
-Eslint plugin vue: see[here][eslint plugin vue]
+Eslint plugin vue: see [here][eslint plugin vue]
 
 ***
 ### SOME COMMON RULES
@@ -65,8 +65,26 @@ export default {
   }
 }
 </script>
-
 ```
+
+4- Trailing commas (pug template)
+
+See [why][trailling-commas]
+```
+// Bad
+component(
+  prop-a="a",
+  prop-b="b" -> no trailing commas
+)
+
+// Good
+component(
+  prop-a="a",
+  prop-b="b",
+)
+```
+
 [eslint plugin vue]: https://eslint.vuejs.org/rules/no-setup-props-destructure.html
 [no-setup-props-destructure]: https://eslint.vuejs.org/rules/no-setup-props-destructure.html
 [no-ref-object-destructure]: https://eslint.vuejs.org/rules/no-ref-object-destructure.html#vue-no-ref-object-destructure
+[trailling-commas]: https://time2hack.com/are-you-using-trailing-commas-in-your-javascript/
