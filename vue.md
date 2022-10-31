@@ -98,7 +98,7 @@ const num_y = ref<number>(0);
 const result = ref<number>(0);
 
 watchEffect(() => {
-  // This will triggered when num_X OR num_y changes
+  // This will triggered when num_x OR num_y changes
   result.value = num_x + num_y;
 });
 ```
