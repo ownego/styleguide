@@ -84,6 +84,25 @@ component(
 )
 ```
 
+5- Watch methods
+
+```
+// Should
+watch(valueToWatch, () => {
+  // This will only triggered when valueToWatch changes
+});
+
+// Should not
+const num_x = ref<number>(0);
+const num_y = ref<number>(0);
+const result = ref<number>(0);
+
+watchEffect(() => {
+  // This will triggered when num_x OR num_y changes
+  result.value = num_x + num_y;
+});
+```
+
 [eslint plugin vue]: https://eslint.vuejs.org/rules/no-setup-props-destructure.html
 [no-setup-props-destructure]: https://eslint.vuejs.org/rules/no-setup-props-destructure.html
 [no-ref-object-destructure]: https://eslint.vuejs.org/rules/no-ref-object-destructure.html#vue-no-ref-object-destructure
